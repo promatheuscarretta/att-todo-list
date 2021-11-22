@@ -66,13 +66,6 @@ function removeCompleted() {
 
 buttonRemoveCompleted.addEventListener('click', removeCompleted);
 
-//Realizado com ajuda do Henrique Zózimo!
-let buttonSaveTask = document.getElementById('salvar-tarefas');
-buttonSaveTask.addEventListener('click', function () {
-  let toDoListInnerHTML = toDoList.innerHTML;
-  localStorage.setItem('ol', toDoListInnerHTML);
-})
-
 let buttonMoveUp = document.getElementById('mover-cima');
 let buttonMoveDown = document.getElementById('mover-baixo');
 let selectedElement = document.querySelector('.selected');
